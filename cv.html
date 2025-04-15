@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosel Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Carousel starts here -->
+        <div class="carousel slide mt-4" id="demo" data-bs-ride="carousel">
+
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Carousel inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <video class="d-block w-100" muted loop autoplay>
+                        <source src="Naut.mp4" type="video/mp4"> 
+                    </video>
+                    <div class="carousel-caption">
+                        <h1>This is my slide 1</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                <video class="d-block w-100" loop autoplay>
+                    <source src="video.mp4" type="video/mp4"> 
+                </video>
+                    <div class="carousel-caption">
+                        <h1>This is my slide 2</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <video src="Naut.mp4" alt="Slide 3" class="d-block w-100" loop autoplay>
+                    <div class="carousel-caption">
+                        <h1>This is my slide 3</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and Right buttons -->
+            <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!-- carousel: Yeh class carousel (slideshow) ko define karti hai.
+carousel-indicators: Slide ke neeche dots show karti hai jo slide ko switch karne mein madad deti hain.
+carousel-inner: Slides ko wrap karta hai.
+carousel-item: Har ek slide ko define karta hai. active class se pehli slide default open hoti hai.
+carousel-caption: Har slide ke upar text ya caption show karta hai.
+carousel-control-prev aur carousel-control-next: Next aur previous slide pe move karne ke liye buttons hain.
+d-block: Image ko block-level element banata hai.
+w-100: Image ko 100% width deta hai.
+active: Pehli slide ko active (default) banata hai. -->

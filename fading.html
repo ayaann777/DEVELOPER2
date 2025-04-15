@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="cont" style="background-color: rgb(0, 0, 0); color: gold; height: 150px; width:
+    150px; text-align: center; margin: 20px; border: 5px solid gold; border-radius: 15px;" >BOX</div>
+    <button id="abc" class="btn btn-primary"style="border: 3px solid black;">fade in</button>
+    <button id="def" class="btn btn-danger"style="border: 3px solid black;">fade out</button>
+    <button id="ghi" class="btn btn-success" style="border: 3px solid black;">toggle</button>
+    <button id="jkl" class="btn btn-info" style="border: 3px solid black;">fade to 50%</button>
+    <script>
+$("#abc").click(function(){
+$ (".cont").fadeIn();
+})
+$("#def").click(function(){
+$ (".cont").fadeOut();
+})
+$("#ghi").click(function(){
+$ (".cont").fadeToggle();
+})
+$("#jkl").click(function(){
+$ (".cont").fadeTo("fast",0.5);
+})
+
+
+    </script>
+</body>
+</html>

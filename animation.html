@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <style></style>
+    <div class="box" style="width: 150px;height: 150px;background-color: aquamarine;text-align: center; border: 5px solid black; font-weight: bolder;">BOX</div>
+    <button class="btn">button</button>
+    <script>
+        $(".btn").click(function(){
+            $(".box").animate({
+                left : "100px",
+                height: "250px",
+                width: "250px",
+            } , 2000 );
+            })
+    </script>
+    <!-- focussssssssss -->
+     <br>
+     <input type="text" id="fcs" placeholder="focus" style="border: 3px solid black;">
+     <script>
+        $("#fcs").focus(function(){
+            $(this).css("background-color", "yellow")
+        });
+     </script>
+     <br>
+     <input type="text" id="blr" placeholder="blur" style="border: 3px solid black;">
+     <script>
+        $("#blr").blur(function(){
+            $(this).css("background-color", "grey")
+        });
+     </script>
+</body>
+</html>
